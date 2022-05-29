@@ -59,4 +59,23 @@ class StreamingGuide:
 
 
 
+Morbius = Movie("Morbius", "action/fantasy", "Daniel Espinosa", "2022")
+
+Theaters = StreamingService("Theaters")
+Theaters.add_movie(Morbius)
+print(Theaters.get_catalog())
+
+Netflix = StreamingService("Netflix")
+Netflix.add_movie(Morbius)
+Netflix.delete_movie(Morbius)
+Netflix.delete_movie("Touch_With_reality")
+
+streaming_guide = StreamingGuide()
+streaming_guide.add_streaming_service(Theaters)
+streaming_guide.add_streaming_service(Netflix)
+streaming_guide.delete_streaming_service(Netflix)
+search_results = streaming_guide.where_to_watch(Morbius)
+print(search_results)
+
+
 
