@@ -25,7 +25,7 @@ class StreamingService:
        movie_details = [movie.get_genre(), movie.get_director(), movie.get_year()]
        self.catalog[movie.get_title()] = movie_details
    def delete_movie(self, movie):
-       if movie in self.catalog is True:
+       if movie in self.catalog is False:
            del self.catalog[movie.get_title()]
 class StreamingGuide:
    def __init__ (self):
@@ -42,7 +42,7 @@ class StreamingGuide:
        for i in self.streaming_service_list:
            print("check1")
 
-           print(float(movie.get_title()) in i.get_catalog())
+           print((movie.get_title()) in i.get_catalog())
            if movie.get_title() in i.get_catalog() is True:
 
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
