@@ -42,7 +42,7 @@ class StreamingGuide:
        for i in self.streaming_service_list:
            print("check1")
 
-           print(movie.get_title() in i.get_catalog())
+           print(str(movie.get_title()) in i.get_catalog())
            if movie.get_title() in i.get_catalog() is True:
 
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
