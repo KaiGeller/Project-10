@@ -58,7 +58,7 @@ class StreamingGuide:
            if movie in i.get_catalog():
                movie_object=i.get_catalog()[movie]
                search_results.append(i.get_name())
-       search_results[0]=search_results[0]+ " ("+movie_object.get_year()+")"
+       search_results[0]=search_results[0]+ " ("+str(movie_object.get_year())+")"
        return search_results
 
 
