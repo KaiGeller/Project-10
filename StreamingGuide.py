@@ -52,6 +52,7 @@ class StreamingGuide:
 
    def where_to_watch(self, movie):
        search_results = []
+       search_results.append(movie.get_title()+" ("+movie.get_year()+")")
        for i in self.streaming_service_list:
            if movie in i.get_catalog():
                search_results.append(i.get_name())
