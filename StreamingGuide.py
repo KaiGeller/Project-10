@@ -1,7 +1,7 @@
 #Kai Geller
 #GitHub Username:KaiGeller
 #5/29/2022
-#The point of this code is to class a movie and streaming service and a streamig guide and use those to find which movies are in which streaming guides.
+#The point of this code is to class a movie and streaming service and a streaming guide and use those to find which movies are in which streaming guides.
 
 
 
