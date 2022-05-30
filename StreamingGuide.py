@@ -34,7 +34,7 @@ class StreamingService:
        self.catalog[movie.get_title()] = movie
 
    def delete_movie(self, movie):
-       if movie in self.catalog is True:
+       if movie.get_title() in self.catalog:
            del self.catalog[movie.get_title()]
 
 class StreamingGuide:
